@@ -1,3 +1,5 @@
 # nemsim.github.io
 
-pretty much all bootstrap
+## TODO
+- [ ] use MDL
+- [ ] link to license for MDL
