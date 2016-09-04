@@ -37,6 +37,10 @@
         padding-bottom: 3px;
       }
 
+      .sticky-bottom {
+        bottom: 0;
+      }
+
     </style>
   </head>
   <body>
@@ -48,7 +52,6 @@
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
           <a href="#nemsim" class="mdl-layout__tab is-active">@nemsim</a>
           <a href="#projects" class="mdl-layout__tab">projects</a>
-          <a href="#stuff" class="mdl-layout__tab">stuff</a>
           <a href="#about" class="mdl-layout__tab">about</a>
         </div>
       </header>
@@ -57,7 +60,7 @@
         <span class="mdl-layout-title">@NemSim</span>
       </div>
 
-      <main class="mdl-layout__content" style="flex: 1 0 auto;">
+      <main class="mdl-layout__content">
 
         <section class="mdl-layout__tab-panel is-active" id="nemsim">
           <div class="page-content mdl-grid">
@@ -489,10 +492,8 @@
               </div>
             </div>
 
-          <!-- end nemsim page-content -->
+          <!-- end nemsim section -->
           </div>
-
-        <!-- end nemsim section -->
         </section>
 
         <section class="mdl-layout__tab-panel" id="projects">
@@ -529,84 +530,124 @@
                   </div>
                 </div>
               </div>
-              <div class="mdl-card__actions mdl-card--border">
+              <div class="mdl-card__actions mdl-card--border sticky-bottom">
                 <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" rel="noopener noreferrer" target="_blank" href="https://github.com/NemSim/dotfiles">View Dotfiles</a>
               </div>
             </div>
-          </div>
-        </section>
 
-        <section class="mdl-layout__tab-panel" id="stuff">
-          <div class="page-content mdl-grid">
-
-            <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
-              <div class="mdl-card__title mdl-card--border">
-                <h2 class="mdl-card__title-text mono-space-command">$ ls /etc</h2>
-              </div>
-              <div class="mdl-card__supporting-text">
-                stuff I use or enjoy coding with
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
-              <div class="mdl-card__title mdl-card--border">
-                <h2 class="mdl-card__title-text mono-space-command">$ echo $ACTIVE_KEYBOARD</h2>
-              </div>
-              <div class="mdl-card__supporting-text">
-                pok3r<br/>
-                Cherry MX Brown<br/>
-              </div>
-              <div class="mdl-card__actions mdl-card--border">
-                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" rel="noopener noreferrer" target="_blank" href="http://www.keyboard-layout-editor.com/#/gists/75bc93eaf84c3ae52d421f79588533f3">View Layout</a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
-              <div class="mdl-card__title mdl-card--border">
-                <h2 class="mdl-card__title-text mono-space-command">$ echo $DAILY_DRIVER_KEYBOARD</h2>
-              </div>
-              <div class="mdl-card__supporting-text">
-                CM Storm Quickfire Rapid<br/>
-                Cherry MX Blue
-              </div>
-              <div class="mdl-card__actions mdl-card--border">
-                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" rel="noopener noreferrer" target="_blank" href="http://www.keyboard-layout-editor.com/#/gists/55fff2d0a35b6fdb59e600f48708a7c7">View Layout</a>
-              </div>
-            </div>
+          <!-- end of projects section -->
           </div>
         </section>
 
         <section class="mdl-layout__tab-panel" id="about">
           <div class="page-content mdl-grid">
-            <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
+            <div class="mdl-cell mdl-card mdl-shadow--4dp mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__title mdl-card--border">
                 <h2 class="mdl-card__title-text mono-space-command">$ GET /about</h2>
               </div>
+
               <div class="mdl-card__supporting-text">
-                about
+                <div class="mdl-grid">
+
+                  <ul class="mdl-list">
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        The official GitHub homepage for @NemSim
+                      </span>
+                    </li>
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        Built by Nemanja Simeunovic in an attempt to use Google's Material Design Spec through the Material Design Lite library
+                      </span>
+                    </li>
+                  </ul>
+
+                <!-- end supporting text grid -->
+                </div>
+              </div>
+
+              <div class="mdl-card__actions mdl-card--border sticky-bottom" style="bottom: 0;">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" rel="noopener noreferrer" target="_blank" href="https://github.com/NemSim/NemSim.github.io">  View Source on GitHub
+                </a>
               </div>
             </div>
+
+            <!-- <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
+              <div class="mdl-card__title mdl-card--border">
+                <h2 class="mdl-card__title-text mono-space-command">$ github pages</h2>
+              </div>
+
+              <div class="mdl-card__supporting-text">
+                <ul class="mdl-list">
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      deployed on GitHub Pages site hosting
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="mdl-card__actions mdl-card--border sticky-bottom">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" rel="noopener noreferrer" target="_blank" href="https://pages.github.com/">GitHub Pages
+                </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
+              <div class="mdl-card__title mdl-card--border">
+                <h2 class="mdl-card__title-text mono-space-command">$ Material Design Lite</h2>
+              </div>
+
+              <div class="mdl-card__supporting-text">
+                <ul class="mdl-list">
+                  Copyright 2015 Google Inc
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+   All code in any directories or sub-directories that end with *.html or
+   *.css is licensed under the Creative Commons Attribution International
+   4.0 License, which full text can be found here:
+   https://creativecommons.org/licenses/by/4.0/legalcode.
+
+   As an exception to this license, all html or css that is generated by
+   the software at the direction of the user is copyright the user. The
+   user has full ownership and control over such content, including
+   whether and how they wish to license it.
+                </ul>
+              </div>
+              
+              <div class="mdl-card__actions mdl-card--border sticky-bottom">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" rel="noopener noreferrer" target="_blank" href="https://getmdl.io/">Material Design Lite
+                </a>
+              </div> -->
+            </div>
+
+          <!-- end of about section -->
           </div>
         </section>
 
-      </main>
-
-      <footer class="mdl-mini-footer">
-        <div class="mdl-mini-footer__left-section">
-          <div class="mdl-logo">
-              <i class="material-icons vertical-align-middle">copyright</i> @NemSim
+        <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer__left-section">
+            <div class="mdl-logo">
+                <i class="material-icons vertical-align-middle">copyright</i> 2016 Nemanja Simeunovic
+            </div>
           </div>
-          <ul class="mdl-mini-footer__link-list">
-            <li><a href="#about">About</a></li>
-            <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/NemSim/NemSim.github.io">Source</a></li>
-          </ul>
-        </div>
-        <div class="mdl-mini-footer__right-section">
-          <button class="mdl-mini-footer__social-btn">web</button>
-          <button class="mdl-mini-footer__social-btn">github</button>
-          <button class="mdl-mini-footer__social-btn">twitter</button>
-        </div>
-      </footer>
+          <div class="mdl-mini-footer__right-section">
+            footers are hard
+          </div>
+        </footer>
+
+      </main>
 
     <!-- end of mdl-layout -->
     </div>
