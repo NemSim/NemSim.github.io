@@ -7,17 +7,558 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
     <title>@nemsim | GitHub</title>
+
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.blue_grey-orange.min.css">
-    <script src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+    <!--<script src="https://code.getmdl.io/1.2.0/material.min.js"></script>-->
 
     <!-- TODO use these instead? but with colors -->
     <!--<link rel="stylesheet" href="assets/material.min.css">-->
     <!--<script src="assets/material.min.js"></script>-->
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Source+Code+Pro:500,900">
+    <link rel="stylesheet" href="assets/styles.css">
+
+    <style>
+      html, body {
+        font-family: 'Source Code Pro', monospace;
+        font-weight: medium;
+        margin: 0;
+        padding: 0;
+      }
+
+      .mono-space-command {
+        font-family: 'Source Code Pro', monospace;
+        font-weight: black;
+      }
+
+      .vertical-align-middle {
+        vertical-align: middle;
+        padding-bottom: 3px;
+      }
+
+    </style>
   </head>
   <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+      <header class="mdl-layout__header mdl-color--primary">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">@NemSim on GitHub</span>
+        </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+          <a href="#nemsim" class="mdl-layout__tab is-active">@nemsim</a>
+          <a href="#projects" class="mdl-layout__tab">projects</a>
+          <a href="#stuff" class="mdl-layout__tab">stuff</a>
+          <a href="#about" class="mdl-layout__tab">about</a>
+        </div>
+      </header>
 
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">@NemSim</span>
+      </div>
 
+      <main class="mdl-layout__content" style="flex: 1 0 auto;">
+
+        <section class="mdl-layout__tab-panel is-active" id="nemsim">
+          <div class="page-content mdl-grid">
+            <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
+              <div class="mdl-card__title mdl-card--border">
+                <h2 class="mdl-card__title-text mono-space-command">$ whois @NemSim</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                unknown operation, listing default info for <a rel="noopener noreferrer" target="_blank" href="https://github.com/NemSim">@NemSim</a>
+                <ul class="mdl-list">
+                  <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                      <i class="material-icons mdl-list__item-icon">person</i>
+                        Nemanja Simeunovic
+                      </span>
+                  </li>
+                  <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-icon">keyboard</i>
+                        Polyglot Developer
+                      </span>
+                  </li>
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <i class="material-icons mdl-list__item-icon">device_hub</i>
+                      dude that hacks on stuff
+                    </span>
+                  </li>
+                  <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-icon">location_city</i>
+                        Chicago, IL
+                      </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
+              <div class="mdl-card__title mdl-card--border">
+                  <h2 class="mdl-card__title-text mono-space-command">$ nmap @NemSim</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                relevant usernames and social media accounts
+                <ul class="mdl-list">
+                  <li class="mdl-list__item mdl-list__item--three-line">
+                    <span class="mdl-list__item-primary-content">
+                      <i class="material-icons mdl-list__item-icon">code</i>
+                      <span>GitHub | @nemsim</span>
+                      <span class="mdl-list__item-text-body">
+                        the place code goes
+                      </span>
+                    </span>
+                    <span class="mdl-list__item-secondary-content">
+                      <a class="mdl-list__item-secondary-action" rel="noopener noreferrer" target="_blank" href="https://github.com/NemSim">
+                        <i class="material-icons">compare_arrows</i>
+                      </a>
+                    </span>
+                  </li>
+
+                  <li class="mdl-list__item mdl-list__item--three-line">
+                    <span class="mdl-list__item-primary-content">
+                      <i class="material-icons mdl-list__item-icon">record_voice_over</i>
+                      <span>Twitter | @nemsim</span>
+                      <span class="mdl-list__item-text-body">
+                        thoughts, see: dumbassery
+                      </span>
+                    </span>
+                    <span class="mdl-list__item-secondary-content">
+                      <a class="mdl-list__item-secondary-action" rel="noopener noreferrer" target="_blank" href="https://www.twitter.com/NemSim">
+                        <i class="material-icons">list</i>
+                      </a>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
+              <div class="mdl-card__title mdl-card--border">
+                  <h2 class="mdl-card__title-text mono-space-command">$ locate @NemSim</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                official web pages (note, nothing is currently up)
+                <ul class="mdl-list">
+                  <li class="mdl-list__item mdl-list__item--three-line">
+                    <span class="mdl-list__item-primary-content">
+                      <i class="material-icons mdl-list__item-icon">public</i>
+                      <span>nemsim.com</span>
+                      <span class="mdl-list__item-text-body">
+                        under construction
+                      </span>
+                    </span>
+                    <span class="mdl-list__item-secondary-content">
+                      <a class="mdl-list__item-secondary-action" rel="noopener noreferrer" target="_blank" href="https://www.nemsim.com/">
+                        <i class="material-icons">cloud_off</i>
+                      </a>
+                    </span>
+                  </li>
+
+                  <li class="mdl-list__item mdl-list__item--three-line">
+                    <span class="mdl-list__item-primary-content">
+                      <i class="material-icons mdl-list__item-icon">description</i>
+                      <span>nemblog</span>
+                      <span class="mdl-list__item-text-body">
+                        under construction
+                      </span>
+                    </span>
+                    <span class="mdl-list__item-secondary-content">
+                      <a class="mdl-list__item-secondary-action" rel="noopener noreferrer" target="_blank" href="https://www.nemsim.com/">
+                        <i class="material-icons">format_clear</i>
+                      </a>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
+              <div class="mdl-card__title mdl-card--border">
+                  <h2 class="mdl-card__title-text mono-space-command">$ type @NemSim</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                proficiencies, skills, frameworks, processes<br/>
+                <span class="mdl-chip mdl-chip--contact">
+                  <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                    <i class="material-icons vertical-align-middle">android</i>
+                  </span>
+
+                  <span class="mdl-chip__text">Android</span>
+                </span>
+                
+                <span class="mdl-chip mdl-chip--contact">
+                  <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                    <i class="material-icons vertical-align-middle">motorcycle</i>
+                  </span>
+
+                  <span class="mdl-chip__text">Ruby on Rails</span>
+                </span>
+
+                <span class="mdl-chip mdl-chip--contact">
+                  <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                    <i class="material-icons vertical-align-middle">cloud</i>
+                  </span>
+
+                  <span class="mdl-chip__text">Web Services</span>
+                </span>
+
+                <span class="mdl-chip mdl-chip--contact">
+                  <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                    <i class="material-icons vertical-align-middle">local_hotel</i>
+                  </span>
+
+                  <span class="mdl-chip__text">REST APIs</span>
+                </span>
+
+                <span class="mdl-chip mdl-chip--contact">
+                  <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                    <i class="material-icons vertical-align-middle">border_bottom</i>
+                  </span>
+
+                  <span class="mdl-chip__text">Sinatra</span>
+                </span>
+
+                <span class="mdl-chip mdl-chip--contact">
+                  <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                    <i class="material-icons vertical-align-middle">call_merge</i>
+                  </span>
+
+                  <span class="mdl-chip__text">nginx</span>
+                </span>
+
+                <span class="mdl-chip mdl-chip--contact">
+                  <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                    <i class="material-icons vertical-align-middle">settings</i>
+                  </span>
+
+                  <span class="mdl-chip__text">Java</span>
+                </span>
+
+                <span class="mdl-chip mdl-chip--contact">
+                  <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                    <i class="material-icons vertical-align-middle">space_bar</i>
+                  </span>
+
+                  <span class="mdl-chip__text">Ruby</span>
+                </span>
+
+                <span class="mdl-chip mdl-chip--contact">
+                  <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">C</span>
+                  <span class="mdl-chip__text">C/C++/C#</span>
+                </span>
+
+                <span class="mdl-chip mdl-chip--contact">
+                  <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                    <i class="material-icons vertical-align-middle">storage</i>
+                  </span>
+
+                  <span class="mdl-chip__text">SQL</span>
+                </span>
+
+                <span class="mdl-chip mdl-chip--contact">
+                  <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                    <i class="material-icons vertical-align-middle">search</i>
+                  </span>
+
+                  <span class="mdl-chip__text">JavaScript</span>
+                </span>
+
+                <span class="mdl-chip mdl-chip--contact">
+                  <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                    <i class="material-icons vertical-align-middle">search</i>
+                  </span>
+
+                  <span class="mdl-chip__text">HTML</span>
+                </span>
+
+                <span class="mdl-chip mdl-chip--contact">
+                  <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                    <i class="material-icons vertical-align-middle">search</i>
+                  </span>
+
+                  <span class="mdl-chip__text">CSS</span>
+                </span>
+
+                <span class="mdl-chip mdl-chip--contact">
+                  <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                    <i class="material-icons vertical-align-middle">linear_scale</i>
+                  </span>
+
+                  <span class="mdl-chip__text">git</span>
+                </span>
+
+                <span class="mdl-chip mdl-chip--contact">
+                  <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                    <i class="material-icons vertical-align-middle">folder_open</i>
+                  </span>
+
+                  <span class="mdl-chip__text">Windows</span>
+                </span>
+
+                <span class="mdl-chip mdl-chip--contact">
+                  <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                    <i class="material-icons vertical-align-middle">folder_open</i>
+                  </span>
+
+                  <span class="mdl-chip__text">GNU/Linux</span>
+                </span>
+
+                <span class="mdl-chip mdl-chip--contact">
+                  <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                    <i class="material-icons vertical-align-middle">folder_open</i>
+                  </span>
+
+                  <span class="mdl-chip__text">OSX</span>
+                </span>
+
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
+              <div class="mdl-card__title mdl-card--border">
+                  <h2 class="mdl-card__title-text mono-space-command">$ dig @NemSim</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <div class="mdl-grid">
+                  <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                    tools, interests and other relevant computer things
+                  </div>
+
+                  <div class="mdl-cell mdl-cell--4-col">
+                    <span class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                        <i class="material-icons vertical-align-middle">text_format</i>
+                      </span>
+
+                      <span class="mdl-chip__text">vim</span>
+                    </span>
+                  </div>
+
+                  <div class="mdl-cell mdl-cell--4-col">
+                    <span class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                        <i class="material-icons vertical-align-middle">dashboard</i>
+                      </span>
+
+                      <span class="mdl-chip__text">tmux</span>
+                    </span>
+                  </div>
+
+                  <div class="mdl-cell mdl-cell--4-col">
+                    <span class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                        <i class="material-icons vertical-align-middle">keyboard</i>
+                      </span>
+
+                      <span class="mdl-chip__text">Keyboards</span>
+                    </span>
+                  </div>
+
+                  <div class="mdl-cell mdl-cell--4-col">
+                    <span class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                        <i class="material-icons vertical-align-middle">developer_board</i>
+                      </span>
+
+                      <span class="mdl-chip__text">Hardware Hacking</span>
+                    </span>
+                  </div>
+
+                    <span class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                        <i class="material-icons vertical-align-middle">bubble_chart</i>
+                      </span>
+
+                      <span class="mdl-chip__text">Architecture</span>
+                    </span>
+
+                    <span class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                        <i class="material-icons vertical-align-middle">import_export</i>
+                      </span>
+
+                      <span class="mdl-chip__text">Integrations</span>
+                    </span>
+
+                    <span class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                        <i class="material-icons vertical-align-middle">bug_report</i>
+                      </span>
+
+                      <span class="mdl-chip__text">Maintenance</span>
+                    </span>
+                    <span class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                        <i class="material-icons vertical-align-middle">live_help</i>
+                      </span>
+
+                      <span class="mdl-chip__text">Hypothetical Questions</span>
+                    </span>
+
+                    <span class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                        <i class="material-icons vertical-align-middle">gamepad</i>
+                      </span>
+
+                      <span class="mdl-chip__text">Games</span>
+                    </span>
+
+                    <span class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                        <i class="material-icons vertical-align-middle">people_outline</i>
+                      </span>
+
+                      <span class="mdl-chip__text">Teaching</span>
+                    </span>
+
+                    <span class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                        <i class="material-icons vertical-align-middle">gif</i>
+                      </span>
+
+                      <span class="mdl-chip__text">GIFs</span>
+                    </span>
+
+                    <span class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                        <i class="material-icons vertical-align-middle">image</i>
+                      </span>
+
+                      <span class="mdl-chip__text">Images</span>
+                    </span>
+                </div>
+              </div>
+            </div>
+
+          <!-- end nemsim page-content -->
+          </div>
+
+        <!-- end nemsim section -->
+        </section>
+
+        <section class="mdl-layout__tab-panel" id="projects">
+          <div class="page-content mdl-grid">
+
+            <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
+              <div class="mdl-card__title mdl-card--border">
+                <h2 class="mdl-card__title-text mono-space-command">$ ls ~/projects</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                projects
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
+              <div class="mdl-card__title mdl-card--border">
+                <h2 class="mdl-card__title-text mono-space-command">$ cat dotfiles/README.md</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <div class="mdl-grid">
+                  <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                    a perpetual work in progress
+                  </div>
+                  <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                    solarized colors
+                  </div>
+                  <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                    vim - text editor
+                  </div>
+                  <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                    tmux - terminal management
+                  </div>
+                  <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                    taskwarrior - task management
+                  </div>
+                </div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" rel="noopener noreferrer" target="_blank" href="https://github.com/NemSim/dotfiles">View Dotfiles</a>
+              </div>
+            </div>
+        </section>
+
+        <section class="mdl-layout__tab-panel" id="stuff">
+          <div class="page-content mdl-grid">
+
+            <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
+              <div class="mdl-card__title mdl-card--border">
+                <h2 class="mdl-card__title-text mono-space-command">$ ls /etc</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                stuff I use or enjoy coding with
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
+              <div class="mdl-card__title mdl-card--border">
+                <h2 class="mdl-card__title-text mono-space-command">$ echo $ACTIVE_KEYBOARD</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                pok3r<br/>
+                Cherry MX Brown<br/>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" rel="noopener noreferrer" target="_blank" href="http://www.keyboard-layout-editor.com/#/gists/75bc93eaf84c3ae52d421f79588533f3">View Layout</a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
+              <div class="mdl-card__title mdl-card--border">
+                <h2 class="mdl-card__title-text mono-space-command">$ echo $DAILY_DRIVER_KEYBOARD</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                CM Storm Quickfire Rapid<br/>
+                Cherry MX Blue
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" rel="noopener noreferrer" target="_blank" href="http://www.keyboard-layout-editor.com/#/gists/55fff2d0a35b6fdb59e600f48708a7c7">View Layout</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mdl-layout__tab-panel" id="about">
+          <div class="page-content mdl-grid">
+            
+
+            <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
+              <div class="mdl-card__title mdl-card--border">
+                <h2 class="mdl-card__title-text mono-space-command">$ GET /about</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                about
+              </div>
+          </div>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="mdl-mini-footer">
+        <div class="mdl-mini-footer__left-section">
+          <div class="mdl-logo">
+              <i class="material-icons vertical-align-middle">copyright</i> @NemSim
+          </div>
+          <ul class="mdl-mini-footer__link-list">
+            <li><a href="#about">About</a></li>
+            <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/NemSim/NemSim.github.io">Source</a></li>
+          </ul>
+        </div>
+        <div class="mdl-mini-footer__right-section">
+          <button class="mdl-mini-footer__social-btn">web</button>
+          <button class="mdl-mini-footer__social-btn">github</button>
+          <button class="mdl-mini-footer__social-btn">twitter</button>
+        </div>
+      </footer>
+
+    <!-- end of mdl-layout -->
+    </div>
+
+    <!-- interview question about javascript blocking page rendering -->
+    <script src="https://code.getmdl.io/1.2.0/material.min.js"></script>
   </body>
 </html>
