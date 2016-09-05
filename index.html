@@ -27,6 +27,11 @@
         padding: 0;
       }
 
+      mono-space {
+        font-family: 'Source Code Pro', monospace;
+        font-weight: medium;
+      }
+
       .mono-space-command {
         font-family: 'Source Code Pro', monospace;
         font-weight: black;
@@ -57,7 +62,12 @@
       </header>
 
       <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">@NemSim</span>
+        <span class="mdl-layout-title">@NemSim on GitHub</span>
+        <nav class="mdl-navigation">
+          <a href="#nemsim" class="mdl-layout__tab is-active">@nemsim</a>
+          <a href="#projects" class="mdl-layout__tab">projects</a>
+          <a href="#about" class="mdl-layout__tab">about</a>
+        </nav>
       </div>
 
       <main class="mdl-layout__content">
@@ -65,6 +75,7 @@
         <section class="mdl-layout__tab-panel is-active" id="nemsim">
           <div class="page-content mdl-grid">
             <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
+
               <div class="mdl-card__title mdl-card--border">
                 <h2 class="mdl-card__title-text mono-space-command">$ whois @NemSim</h2>
               </div>
@@ -90,14 +101,16 @@
                     </span>
                   </li>
                   <li class="mdl-list__item">
-                      <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">location_city</i>
-                        Chicago, IL
-                      </span>
+                    <span class="mdl-list__item-primary-content">
+                      <i class="material-icons mdl-list__item-icon">location_city</i>
+                      Chicago, IL
+                    </span>
                   </li>
                 </ul>
               </div>
+            <!-- end general info card -->
             </div>
+
 
             <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
               <div class="mdl-card__title mdl-card--border">
@@ -109,9 +122,9 @@
                   <li class="mdl-list__item mdl-list__item--three-line">
                     <span class="mdl-list__item-primary-content">
                       <i class="material-icons mdl-list__item-icon">code</i>
-                      <span>GitHub | @nemsim</span>
+                      <span>GitHub @nemsim</span>
                       <span class="mdl-list__item-text-body">
-                        the place code goes
+                        the place I put my code
                       </span>
                     </span>
                     <span class="mdl-list__item-secondary-content">
@@ -124,9 +137,9 @@
                   <li class="mdl-list__item mdl-list__item--three-line">
                     <span class="mdl-list__item-primary-content">
                       <i class="material-icons mdl-list__item-icon">record_voice_over</i>
-                      <span>Twitter | @nemsim</span>
+                      <span>Twitter @nemsim</span>
                       <span class="mdl-list__item-text-body">
-                        thoughts, see: dumbassery
+                        the place I say dumb things
                       </span>
                     </span>
                     <span class="mdl-list__item-secondary-content">
@@ -135,53 +148,30 @@
                       </a>
                     </span>
                   </li>
-                </ul>
-              </div>
-            </div>
 
-            <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
-              <div class="mdl-card__title mdl-card--border">
-                  <h2 class="mdl-card__title-text mono-space-command">$ locate @NemSim</h2>
-              </div>
-              <div class="mdl-card__supporting-text">
-                official web pages (note, nothing is currently up)
-                <ul class="mdl-list">
                   <li class="mdl-list__item mdl-list__item--three-line">
                     <span class="mdl-list__item-primary-content">
-                      <i class="material-icons mdl-list__item-icon">public</i>
-                      <span>nemsim.com</span>
+                      <i class="material-icons mdl-list__item-icon">favorite_border</i>
+                      <span>#nemrules</span>
                       <span class="mdl-list__item-text-body">
-                        under construction
+                        official hashtag
                       </span>
                     </span>
                     <span class="mdl-list__item-secondary-content">
-                      <a class="mdl-list__item-secondary-action" rel="noopener noreferrer" target="_blank" href="https://www.nemsim.com/">
-                        <i class="material-icons">cloud_off</i>
+                      <a class="mdl-list__item-secondary-action" rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet?button_hashtag=nemrules" data-related="NemSim" data-show-count="false">
+                        <i class="material-icons">share</i>
                       </a>
                     </span>
                   </li>
 
-                  <li class="mdl-list__item mdl-list__item--three-line">
-                    <span class="mdl-list__item-primary-content">
-                      <i class="material-icons mdl-list__item-icon">description</i>
-                      <span>nemblog</span>
-                      <span class="mdl-list__item-text-body">
-                        under construction
-                      </span>
-                    </span>
-                    <span class="mdl-list__item-secondary-content">
-                      <a class="mdl-list__item-secondary-action" rel="noopener noreferrer" target="_blank" href="https://www.nemsim.com/">
-                        <i class="material-icons">format_clear</i>
-                      </a>
-                    </span>
-                  </li>
                 </ul>
               </div>
+              <!-- end profiles card -->
             </div>
 
             <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
               <div class="mdl-card__title mdl-card--border">
-                  <h2 class="mdl-card__title-text mono-space-command">$ type @NemSim</h2>
+                  <h2 class="mdl-card__title-text mono-space-command">$ ls @NemSim</h2>
               </div>
               <div class="mdl-card__supporting-text">
                 <div class="mdl-grid">
@@ -215,7 +205,7 @@
                         <i class="material-icons vertical-align-middle">cloud</i>
                       </span>
 
-                      <span class="mdl-chip__text">Web Services</span>
+                      <span class="mdl-chip__text">Cloud Services</span>
                     </span>
                   </div>
 
@@ -329,6 +319,16 @@
                   <div class="mdl-cell mdl-cell--4-col">
                     <span class="mdl-chip mdl-chip--contact">
                       <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                        <i class="material-icons vertical-align-middle">import_contacts</i>
+                      </span>
+
+                      <span class="mdl-chip__text">Paper</span>
+                    </span>
+                  </div>
+
+                  <div class="mdl-cell mdl-cell--4-col">
+                    <span class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
                         <i class="material-icons vertical-align-middle">folder_open</i>
                       </span>
 
@@ -361,12 +361,12 @@
 
             <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
               <div class="mdl-card__title mdl-card--border">
-                  <h2 class="mdl-card__title-text mono-space-command">$ dig @NemSim</h2>
+                  <h2 class="mdl-card__title-text mono-space-command">$ grep @NemSim</h2>
               </div>
               <div class="mdl-card__supporting-text">
                 <div class="mdl-grid">
                   <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-                    tools, interests and other relevant computer things
+                    the other relevant computer things
                   </div>
 
                   <div class="mdl-cell mdl-cell--4-col">
@@ -445,7 +445,7 @@
                         <i class="material-icons vertical-align-middle">live_help</i>
                       </span>
 
-                      <span class="mdl-chip__text">Hypotheticals</span>
+                      <span class="mdl-chip__text">Quandaries</span>
                     </span>
                   </div>
 
@@ -492,6 +492,64 @@
               </div>
             </div>
 
+            <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
+              <div class="mdl-card__title mdl-card--border">
+                  <h2 class="mdl-card__title-text mono-space-command">$ ping @NemSim</h2>
+              </div>
+              <div class="mdl-card__supporting-text">   
+                <ul class="mdl-list">
+
+                  <li class="mdl-list__item mdl-list__item--three-line">
+                    <span class="mdl-list__item-primary-content">
+                      <i class="material-icons mdl-list__item-icon">warning</i>
+                      <span>// TODO sites</span>
+                      <span class="mdl-list__item-text-body">
+                        not done yet
+                      </span>
+                    </span>
+                    <span class="mdl-list__item-secondary-content">
+                      <!-- <a class="mdl-list__item-secondary-action" rel="noopener noreferrer" target="_blank" href="https://www.nemsim.com/"> -->
+                        <i class="material-icons">warning</i>
+                      <!-- </a> -->
+                    </span>
+                  </li>
+
+                  <li class="mdl-list__item mdl-list__item--three-line">
+                    <span class="mdl-list__item-primary-content">
+                      <i class="material-icons mdl-list__item-icon">public</i>
+                      <span>nemsim.com</span>
+                      <span class="mdl-list__item-text-body">
+                        under construction
+                      </span>
+                    </span>
+                    <span class="mdl-list__item-secondary-content">
+                      <!-- <a class="mdl-list__item-secondary-action" rel="noopener noreferrer" target="_blank" href="https://www.nemsim.com/"> -->
+                        <i class="material-icons">cloud_off</i>
+                      <!-- </a> -->
+                    </span>
+                  </li>
+
+                  <li class="mdl-list__item mdl-list__item--three-line">
+                    <span class="mdl-list__item-primary-content">
+                      <i class="material-icons mdl-list__item-icon">description</i>
+                      <span>nemblog</span>
+                      <span class="mdl-list__item-text-body">
+                        under construction
+                      </span>
+                    </span>
+                    <span class="mdl-list__item-secondary-content">
+                      <!-- <a class="mdl-list__item-secondary-action" rel="noopener noreferrer" target="_blank" href="https://www.nemsim.com/"> -->
+                        <i class="material-icons">format_clear</i>
+                      <!-- </a> -->
+                    </span>
+                  </li>
+                  <!-- end card supporting text -->
+                </ul>
+              </div>
+
+              <!-- end official links card -->
+            </div>
+
           <!-- end nemsim section -->
           </div>
         </section>
@@ -503,31 +561,111 @@
                 <h2 class="mdl-card__title-text mono-space-command">$ ls ~/projects</h2>
               </div>
               <div class="mdl-card__supporting-text">
-                projects
+                <div class="mdl-grid">
+                  <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                    code for different things
+                  </div>
+                </div>
               </div>
             </div>
 
             <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
               <div class="mdl-card__title mdl-card--border">
-                <h2 class="mdl-card__title-text mono-space-command">$ cat dotfiles/README.md</h2>
+                <h2 class="mdl-card__title-text mono-space-command">$ cd nemsim.github.io</h2>
               </div>
               <div class="mdl-card__supporting-text">
                 <div class="mdl-grid">
                   <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-                    a perpetual work in progress
+                    this site!
+                  </div>
+                </div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border sticky-bottom">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" rel="noopener noreferrer" target="_blank" href="https://github.com/NemSim/NemSim.github.io">View Source</a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
+              <div class="mdl-card__title mdl-card--border">
+                <h2 class="mdl-card__title-text mono-space-command">$ cd dotfiles</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <div class="mdl-grid">
+                  <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                    a collection of settings, shortcuts and sometimes colors for tools I like to use
                   </div>
                   <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-                    solarized colors
+                    a perpetual work in progress...
                   </div>
                   <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-                    vim - text editor
+                    main tools:
                   </div>
-                  <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-                    tmux - terminal management
+
+                  <div class="mdl-cell mdl-cell--4-col">
+                    <span id="chip-tmux-info" class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                        <i class="material-icons vertical-align-middle">dashboard</i>
+                      </span>
+
+                      <span class="mdl-chip__text">tmux</span>
+                    </span>
+                    <div class="mdl-tooltip" data-mdl-for="chip-tmux-info">
+                      terminal management
+                    </div>
                   </div>
-                  <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-                    taskwarrior - task management
+
+                  <div class="mdl-cell mdl-cell--4-col">
+                    <span id="chip-vim-info" class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                        <i class="material-icons vertical-align-middle">text_format</i>
+                      </span>
+
+                      <span class="mdl-chip__text">vim</span>
+                    </span>
+                    <div class="mdl-tooltip" data-mdl-for="chip-vim-info">
+                      text editor
+                    </div>
                   </div>
+
+                  <div class="mdl-cell mdl-cell--4-col">
+                    <span id="chip-git-info" class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                        <i class="material-icons vertical-align-middle">linear_scale</i>
+                      </span>
+
+                      <span class="mdl-chip__text">git</span>
+                    </span>
+                    <div class="mdl-tooltip" data-mdl-for="chip-git-info">
+                      version control
+                    </div>
+                  </div>
+
+                  <div class="mdl-cell mdl-cell--4-col">
+                    <span id="chip-thyme-info" class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                        <i class="material-icons vertical-align-middle">timer</i>
+                      </span>
+
+                      <span class="mdl-chip__text">thyme</span>
+                    </span>
+                    <div class="mdl-tooltip" data-mdl-for="chip-thyme-info">
+                      pomodoro timer
+                    </div>
+                  </div>
+
+                  <div class="mdl-cell mdl-cell--4-col">
+                    <span id="chip-taskwarrior-info" class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--blue-grey mdl-color-text--white">
+                        <i class="material-icons vertical-align-middle">done_all</i>
+                      </span>
+
+                      <span class="mdl-chip__text">taskwarrior</span>
+                    </span>
+                    <div class="mdl-tooltip" data-mdl-for="chip-taskwarrior-info">
+                      task management
+                    </div>
+                  </div>
+
                 </div>
               </div>
               <div class="mdl-card__actions mdl-card--border sticky-bottom">
@@ -560,6 +698,11 @@
                         Built by Nemanja Simeunovic in an attempt to use Google's Material Design Spec through the Material Design Lite library
                       </span>
                     </li>
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        The rest is open source licenses
+                      </span>
+                    </li>
                   </ul>
 
                 <!-- end supporting text grid -->
@@ -568,6 +711,128 @@
 
               <div class="mdl-card__actions mdl-card--border sticky-bottom" style="bottom: 0;">
                 <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" rel="noopener noreferrer" target="_blank" href="https://github.com/NemSim/NemSim.github.io">  View Source on GitHub
+                </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-card mdl-shadow--4dp mdl-cell--4-col">
+              <div class="mdl-card__title mdl-card--border">
+                <h2 class="mdl-card__title-text mono-space-command">Source Code Pro (font)</h2>
+              </div>
+
+              <div class="mdl-card__supporting-text">
+                <div class="mdl-grid">
+
+                  <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                    <span class="mono-space-command">
+                      because how cool does this look?
+                    </span>
+                  </div>
+
+                  <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                    <a rel="noopener noreferrer" target="_blank" href="https://github.com/adobe-fonts/source-code-pro">
+                      github.com/adobe-fonts/source-code-pro
+                    </a>
+                  </div>
+
+                  <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                    <a rel="noopener noreferrer" target="_blank" href="https://fonts.google.com/specimen/Source%20Code%20Pro">on Google Fonts</a>
+                  </div>
+
+                  <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                    <span class="mono-space-command">
+                      because how cool does this look?
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mdl-card__actions mdl-card--border sticky-bottom" style="bottom: 0;">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" rel="noopener noreferrer" target="_blank" href="https://github.com/adobe-fonts/source-code-pro">
+                  View Project on GitHub
+                </a>
+              </div>
+
+            </div>
+
+            <div class="mdl-cell mdl-card mdl-shadow--4dp mdl-cell--4-col">
+              <div class="mdl-card__title mdl-card--border">
+                <h2 class="mdl-card__title-text mono-space-command">Material Design Lite</h2>
+              </div>
+
+              <div class="mdl-card__supporting-text">
+                <div class="mdl-grid">
+
+                  <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                    <a rel="noopener noreferrer" target="_blank" href="https://github.com/google/material-design-lite">github.com/google/material-design-lite</a>
+                  </div>
+
+                  <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                    Copyright 2015 Google Inc<br/><br/>
+
+                    Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+                    <br/><br/>
+
+                    <a rel="noopener noreferrer" target="_blank" href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a><br/><br/>
+
+                    Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.<br/><br/>
+
+                    All code in any directories or sub-directories that end with *.html or *.css is licensed under the Creative Commons Attribution International 4.0 License, which full text can be found here:<br/><br/>
+                    
+                    <a rel="noopener noreferrer" target="_blank" href="https://creativecommons.org/licenses/by/4.0/legalcode">https://creativecommons.org/licenses/by/4.0/legalcode</a><br/><br/>
+
+                    As an exception to this license, all html or css that is generated by the software at the direction of the user is copyright the user. The user has full ownership and control over such content, including whether and how they wish to license it.
+                  </div>
+
+                  <!-- end supporting text grid -->
+                </div>
+              </div>
+
+              <div class="mdl-card__actions mdl-card--border sticky-bottom" style="bottom: 0;">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" rel="noopener noreferrer" target="_blank" href="https://github.com/google/material-design-lite">
+                  View Project on GitHub
+                </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-card mdl-shadow--4dp mdl-cell--4-col">
+              <div class="mdl-card__title mdl-card--border">
+                <h2 class="mdl-card__title-text mono-space-command">Roboto (font)</h2>
+              </div>
+
+              <div class="mdl-card__supporting-text">
+                <div class="mdl-grid">
+
+                  <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                    <a rel="noopener noreferrer" target="_blank" href="https://github.com/google/roboto/">
+                      github.com/google/roboto/
+                    </a>
+                  </div>
+
+                  <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                    Copyright 2015 Google Inc<br/><br/>
+
+                    Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+                    <br/><br/>
+
+                    <a rel="noopener noreferrer" target="_blank" href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a><br/><br/>
+
+                    Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.<br/><br/>
+
+                    All code in any directories or sub-directories that end with *.html or *.css is licensed under the Creative Commons Attribution International 4.0 License, which full text can be found here:<br/><br/>
+                    
+                    <a rel="noopener noreferrer" target="_blank" href="https://creativecommons.org/licenses/by/4.0/legalcode">https://creativecommons.org/licenses/by/4.0/legalcode</a><br/><br/>
+
+                    As an exception to this license, all html or css that is generated by the software at the direction of the user is copyright the user. The user has full ownership and control over such content, including whether and how they wish to license it.
+                  </div>
+
+                  <!-- end supporting text grid -->
+                </div>
+              </div>
+
+              <div class="mdl-card__actions mdl-card--border sticky-bottom" style="bottom: 0;">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" rel="noopener noreferrer" target="_blank" href="https://github.com/google/roboto/">
+                  View Project on GitHub
                 </a>
               </div>
             </div>
@@ -635,17 +900,6 @@
           <!-- end of about section -->
           </div>
         </section>
-
-        <footer class="mdl-mini-footer">
-          <div class="mdl-mini-footer__left-section">
-            <div class="mdl-logo">
-                <i class="material-icons vertical-align-middle">copyright</i> 2016 Nemanja Simeunovic
-            </div>
-          </div>
-          <div class="mdl-mini-footer__right-section">
-            footers are hard
-          </div>
-        </footer>
 
       </main>
 
