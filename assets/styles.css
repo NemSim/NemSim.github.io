@@ -1,8 +1,11 @@
-html, body {
-  font-family: 'Source Code Pro', monospace;
-  font-weight: 500;
+body.mdl-nem {
   margin: 0;
   padding: 0;
+}
+
+.mdl-nem {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 500;
 }
 
 .mono-space {
