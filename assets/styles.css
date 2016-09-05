@@ -1,0 +1,21 @@
+html, body {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.mono-space {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 500;
+}
+
+.mono-space-command {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 700;
+}
+
+.vertical-align-middle {
+  vertical-align: middle;
+  padding-bottom: 3px;
+}
